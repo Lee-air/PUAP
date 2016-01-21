@@ -91,7 +91,7 @@ switch m
         
         Initial_conditions = [-1 1 0.5 -0.5 1];
         
-        disp('Problem AC17');
+        disp('Problem AC3');
     otherwise
         disp('Wrong value. Program will end now.')
 end
@@ -99,14 +99,14 @@ end
 m = input('Enter a number from 1 to 3 to select noise gain: ');
 switch m
     case 1
-        Noise_Gain = 0.25;
-        disp('Noise gain = 0.25');
+        Disturbance_Gain = 0.25;
+        disp('Disturbance gain = 0.25');
     case 2
-        Noise_Gain = 1;
-        disp('Noise gain = 1');
+        Disturbance_Gain = 1;
+        disp('Disturbance gain = 1');
     case 3
-        Noise_Gain = 2;
-        disp('Noise gain = 2');
+        Disturbance_Gain = 2;
+        disp('Disturbance gain = 2');
     otherwise
         disp('Wrong value. Program will end now.')
 end

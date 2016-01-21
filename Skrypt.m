@@ -12,7 +12,7 @@ nyquist(Gp);
 title('Charakterystyka amplitudowo-fazowa obiektu');
 
 %Synteza filtru Kalmana%
-sys=ss(A,[B Noise_Gain*BB],C,0);
+sys=ss(A,[B Disturbance_Gain*BB],C,0);
 [est,L,P]=kalman(sys,QN,RN);
 
 %Synteza regulatora LQG%
